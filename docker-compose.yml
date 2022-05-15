@@ -1,0 +1,15 @@
+version: '1'
+
+services:
+  exhibitit:
+    image: exhibitit:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: exhibitit
+    hostname: exhibitit
+    volumes:
+      - .env:/usr/src/app/.env:ro
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
