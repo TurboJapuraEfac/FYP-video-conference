@@ -2,7 +2,7 @@
 
 $API_KEY = "exhibitit_default_secret";
 // Change this after deployment
-$EXHIBITIT_URL = "https://exhibitit.up.railway.app/api/v1/meeting";
+$EXHIBITIT_URL = "https://exhibitit-production.up.railway.app/api/v1/meeting";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $EXHIBITIT_URL);
