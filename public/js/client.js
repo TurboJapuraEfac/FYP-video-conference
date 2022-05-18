@@ -1,5 +1,4 @@
 
-
 "use strict"; // https://www.w3schools.com/js/js_strict.asp
 
 const isHttps = false; // must be the same to server.js isHttps
@@ -119,7 +118,6 @@ let screenShareBtn;
 let recordStreamBtn;
 let fullScreenBtn;
 let chatRoomBtn;
-let captionBtn;
 let myHandBtn;
 let fileShareBtn;
 let leaveRoomBtn;
@@ -278,7 +276,6 @@ function getHtmlElementsById() {
   screenShareBtn = getId("screenShareBtn");
   recordStreamBtn = getId("recordStreamBtn");
   fullScreenBtn = getId("fullScreenBtn");
-  captionBtn = getId("captionBtn");
   chatRoomBtn = getId("chatRoomBtn");
   fileShareBtn = getId("fileShareBtn");
   myHandBtn = getId("myHandBtn");
@@ -390,7 +387,6 @@ function setButtonsToolTip() {
   setTippy(recordStreamBtn, "START recording", "right-start");
   setTippy(fullScreenBtn, "VIEW full screen", "right-start");
   setTippy(chatRoomBtn, "Open the Chat", "right-start");
-  setTippy(captionBtn, "Open Text-To-Speech", "right-start");
   setTippy(myHandBtn, "Raise ur hand", "right-start");
   setTippy(fileShareBtn, "Share a file", "right-start");
   setTippy(leaveRoomBtn, "Leave this room", "right-start");
