@@ -2128,13 +2128,13 @@ function setChatRoomBtn() {
 function setCaptionRoomBtn() {
   if ("webkitSpeechRecognition" in window) {
     // open hide caption
-    captionBtn.addEventListener("click", (e) => {
-      if (!isCaptionBoxVisible) {
-        showCaptionDraggable();
-      } else {
-        hideCaptionBox();
-      }
-    });
+//     captionBtn.addEventListener("click", (e) => {
+//       if (!isCaptionBoxVisible) {
+//         showCaptionDraggable();
+//       } else {
+//         hideCaptionBox();
+//       }
+//     });
 
     // clean caption transcripts
     captionClean.addEventListener("click", (e) => {
@@ -2172,7 +2172,7 @@ function setCaptionRoomBtn() {
       startSpeech(false);
     });
   } else {
-    captionBtn.style.display = "none";
+//     captionBtn.style.display = "none";
     // https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API#browser_compatibility
   }
 }
@@ -3397,14 +3397,14 @@ function showCaptionDraggable() {
     buttonsBar.style.display = "none";
     isButtonsVisible = false;
   }
-  captionBtn.className = "far fa-closed-captioning";
+//   captionBtn.className = "far fa-closed-captioning";
   captionDraggable.style.top = "50%";
   captionDraggable.style.left = isMobileDevice ? "50" : "75%";
   captionDraggable.style.display = "flex";
   isCaptionBoxVisible = true;
   // only for desktop
   if (!isMobileDevice) {
-    setTippy(captionBtn, "CLOSE Text-To-Speech", "right-start");
+//     setTippy(captionBtn, "CLOSE Text-To-Speech", "right-start");
   }
 }
 /**
@@ -3489,15 +3489,15 @@ function hideChatRoomAndEmojiPicker() {
 /**
  * Hide chat room and emoji picker
  */
-function hideCaptionBox() {
-  captionDraggable.style.display = "none";
-  captionBtn.className = "fas fa-closed-captioning";
-  isCaptionBoxVisible = false;
-  // only for desktop
-  if (!isMobileDevice) {
-    setTippy(captionBtn, "Open Text-To-Speech", "right-start");
-  }
-}
+// function hideCaptionBox() {
+//   captionDraggable.style.display = "none";
+//   captionBtn.className = "fas fa-closed-captioning";
+//   isCaptionBoxVisible = false;
+//   // only for desktop
+//   if (!isMobileDevice) {
+//     setTippy(captionBtn, "Open Text-To-Speech", "right-start");
+//   }
+// }
 
 /**
  * Send Chat messages to peers in the room
